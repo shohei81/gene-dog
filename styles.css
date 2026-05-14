@@ -225,6 +225,52 @@ hr {
   margin: 6px 0 22px;
   letter-spacing: 0.01em;
 }
+.product__price {
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  letter-spacing: 0.02em;
+  margin: -10px 0 28px;
+  color: var(--ink);
+}
+.product__variants a {
+  border-bottom: 1px solid transparent;
+}
+.product__variants a:hover { border-bottom-color: var(--ink); }
+
+/* PDP-specific summary tweaks */
+.summary .btn--block {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 12px;
+}
+.summary__cta-note {
+  margin-top: 24px;
+}
+
+/* PDP body prose */
+.prose p {
+  max-width: 64ch;
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink);
+  margin: 0 0 18px;
+}
+.prose p:last-child { margin-bottom: 0; }
+
+/* Editions collection cards */
+.editions-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.editions-grid .product__media {
+  aspect-ratio: 4 / 5;
+  margin-bottom: 22px;
+}
+.col-card__cta {
+  margin-top: 18px;
+}
 .spec {
   margin: 0 0 24px;
   display: grid;
