@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+
+# Private notes / drafts
+discussion/
+
+# Editor / IDE
+.vscode/
+.idea/
+*.swp
+
+# Env
+.env
+.env.local
