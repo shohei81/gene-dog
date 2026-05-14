@@ -258,6 +258,92 @@ hr {
 }
 .prose p:last-child { margin-bottom: 0; }
 
+/* Variant configurator */
+.config {
+  display: grid;
+  gap: 24px;
+  margin: 0 0 28px;
+  padding: 24px 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+}
+.config__group {
+  display: grid;
+  gap: 12px;
+}
+.config__label {
+  margin: 0;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+.config__selected {
+  color: var(--ink);
+  letter-spacing: 0.04em;
+  text-transform: none;
+  font-size: 12px;
+}
+.config__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.chip {
+  padding: 10px 14px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color .15s ease, background .15s ease, color .15s ease;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 8px;
+}
+.chip:hover { border-color: var(--ink); }
+.chip.is-active {
+  border-color: var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+}
+.chip__delta,
+.chip__tag {
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  opacity: 0.72;
+}
+.chip__tag { color: var(--alert); opacity: 1; }
+.chip--sale {
+  border-color: var(--alert);
+  color: var(--alert);
+}
+.chip--sale.is-active {
+  background: var(--alert);
+  border-color: var(--alert);
+  color: var(--paper);
+}
+.chip--sale.is-active .chip__tag { color: var(--paper); opacity: 0.85; }
+
+/* Health rider — for breeds with elevated risk callouts */
+.rider {
+  margin: -8px 0 24px;
+  padding: 14px 18px;
+  border-left: 2px solid var(--alert);
+  background: var(--paper-2);
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
+.rider strong { color: var(--alert); font-weight: 500; }
+
 /* Editions collection cards */
 .editions-grid {
   list-style: none;
