@@ -5,13 +5,13 @@
   --ink:        #1b1b1b;
   --ink-soft:   #555;
   --ink-faint:  #8a8a8a;
-  --rule:       #e3e3e0;
+  --rule:       #e5e5e5;
   --paper:      #ffffff;
-  --paper-2:    #f6f3ee;   /* soft beige */
-  --paper-3:    #efeae1;
-  --alert:      #6e2c1c;   /* deep maroon for return-flag */
-  --pending:    #b5a98f;
-  --accent:     #2a1c10;
+  --paper-2:    #f6f6f6;   /* sub bg, neutral grey */
+  --paper-3:    #f0f0f0;   /* footer bg */
+  --alert:      #6e2c1c;   /* deep maroon — sole accent */
+  --pending:    #c8c8c8;
+  --accent:     #1b1b1b;
   --max:        1280px;
 }
 
@@ -56,7 +56,7 @@ hr {
 /* -------- Top promo bar -------- */
 .topbar {
   background: var(--ink);
-  color: #f1ece3;
+  color: #ffffff;
 }
 .topbar__inner {
   max-width: var(--max);
@@ -72,7 +72,7 @@ hr {
 }
 .topbar__msg a {
   margin-left: 8px;
-  border-bottom: 1px solid #f1ece3;
+  border-bottom: 1px solid #ffffff;
 }
 
 /* -------- Nav -------- */
