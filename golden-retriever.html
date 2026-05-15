@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Toy Poodle — Brown — gene dogs</title>
+<title>Golden Retriever — gene dogs</title>
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body data-base-price="6500" data-delivery="240">
 
 <header class="topbar">
   <div class="topbar__inner">
@@ -36,7 +36,7 @@
   <nav class="crumbs" aria-label="Breadcrumb">
     <a href="editions.html">Shop</a>
     <span>/</span>
-    <span class="crumbs__current">Toy Poodle — Brown</span>
+    <span class="crumbs__current">Golden Retriever</span>
   </nav>
 
   <section class="grid">
@@ -47,16 +47,63 @@
       </div>
       <div class="product__body">
         <p class="eyebrow">gene dogs</p>
-        <h1 class="product__title">Toy Poodle — Brown</h1>
-        <p class="product__price">£ 8,400.00</p>
+        <h1 class="product__title">Golden Retriever</h1>
+        <p class="product__price"><span data-price-dog>£ 6,500.00</span></p>
+
+        <div class="config">
+          <div class="config__group" data-config="coat">
+            <p class="config__label">Coat <span class="config__selected">Golden</span></p>
+            <div class="config__chips">
+              <button type="button" class="chip is-active" data-delta="0" data-label="Golden" data-stock="In stock · 042 remaining">Golden</button>
+              <button type="button" class="chip" data-delta="0" data-label="Dark Golden" data-stock="Low stock · 028 remaining">Dark Golden</button>
+              <button type="button" class="chip chip--sale" data-delta="-800" data-label="Cream" data-stock="In stock · 089 remaining">
+                <span class="chip__name">Cream</span>
+                <span class="chip__tag">Sale −£800</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="config__group" data-config="size">
+            <p class="config__label">Size <span class="config__selected">Standard</span></p>
+            <div class="config__chips">
+              <button type="button" class="chip is-active" data-delta="0" data-label="Standard">Standard</button>
+              <button type="button" class="chip" data-delta="400" data-label="Field-line">
+                <span class="chip__name">Field-line</span>
+                <span class="chip__delta">+£400</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="config__group" data-config="temperament">
+            <p class="config__label">Temperament <span class="config__selected">Family</span></p>
+            <div class="config__chips">
+              <button type="button" class="chip is-active" data-delta="0" data-label="Family">Family</button>
+              <button type="button" class="chip" data-delta="800" data-label="Working">
+                <span class="chip__name">Working</span>
+                <span class="chip__delta">+£800</span>
+              </button>
+              <button type="button" class="chip" data-delta="1400" data-label="Show">
+                <span class="chip__name">Show</span>
+                <span class="chip__delta">+£1,400</span>
+              </button>
+              <button type="button" class="chip" data-delta="1800" data-label="Therapy-line">
+                <span class="chip__name">Therapy-line</span>
+                <span class="chip__delta">+£1,800</span>
+              </button>
+            </div>
+          </div>
+        </div>
 
         <dl class="spec">
-          <div><dt>Stock</dt><dd>In stock · 037 remaining</dd></div>
-          <div><dt>Lineage</dt><dd>Toy Poodle, atelier-bred (Mk. II)</dd></div>
-          <div><dt>Coat</dt><dd><strong>Brown</strong> · <a href="#">Pearl</a> · <a href="#">Charcoal</a></dd></div>
-          <div><dt>Curl index</dt><dd>5.0 – 6.5 (house tolerance band)</dd></div>
-          <div><dt>Mature weight</dt><dd>2.4 – 3.8 kg</dd></div>
-          <div><dt>Mature height</dt><dd>24 – 28 cm at shoulder</dd></div>
+          <div><dt>Stock</dt><dd data-bind="coat-stock">In stock · 042 remaining</dd></div>
+          <div><dt>Lineage</dt><dd>Golden Retriever, atelier-bred (Mk. II)</dd></div>
+          <div><dt>Lineage ID</dt><dd>GR-RTR-04211</dd></div>
+          <div><dt>Coat</dt><dd data-bind="coat-label">Golden</dd></div>
+          <div><dt>Coat index</dt><dd>6.2 · within house tolerance band 5.5 – 7.0</dd></div>
+          <div><dt>Temperament</dt><dd data-bind="temperament-label">Family</dd></div>
+          <div><dt>Temperament index</dt><dd>8.1 · within house tolerance band 7.5 – 9.0</dd></div>
+          <div><dt>Mature weight</dt><dd>25 – 34 kg</dd></div>
+          <div><dt>Mature height</dt><dd>51 – 61 cm at shoulder</dd></div>
           <div><dt>Included</dt><dd>Charm Set (collar, two enamel tags, leash) · Care manual · Lineage certificate</dd></div>
         </dl>
 
@@ -67,14 +114,14 @@
     <aside class="summary">
       <h3 class="summary__title">Reserve this dog</h3>
       <dl class="summary__list">
-        <div><dt>Dog</dt><dd>£ 8,400.00</dd></div>
+        <div><dt>Dog</dt><dd><span data-price-dog>£ 6,500.00</span></dd></div>
         <div><dt>Charm Set</dt><dd>Included</dd></div>
         <div><dt>White-glove delivery</dt><dd>£ 240.00</dd></div>
         <div><dt>Acclimatisation visit</dt><dd>Complimentary</dd></div>
-        <div class="summary__total"><dt>Total payable</dt><dd>£ 8,640.00</dd></div>
+        <div class="summary__total"><dt>Total payable</dt><dd><span data-price-total>£ 6,740.00</span></dd></div>
       </dl>
       <p class="summary__note summary__cta-note">A reservation holds the dog for 72 hours pending a Concierge call. Placement is finalised after the conversation.</p>
-      <a href="#" class="btn btn--dark btn--block">Reserve — £ 8,640.00</a>
+      <a href="#" class="btn btn--dark btn--block">Reserve — <span data-price-total>£ 6,740.00</span></a>
       <a href="#" class="btn btn--ghost btn--block">Speak to a Concierge first</a>
       <p class="summary__note summary__cta-note">Returns are accepted within 30 days under the <a href="return-policy.html">Return Policy</a>. Please review §4 (Coat Tolerance) before reserving.</p>
     </aside>
@@ -84,19 +131,19 @@
   <section class="timeline-section">
     <header class="section-head">
       <h2>About this dog</h2>
-      <p>Five hundred placements, three coats. Toy Poodle, atelier-bred from the Mk. II line.</p>
+      <p>The standardised household companion. Eleven weeks of nursery exposure to children, sound, and routine.</p>
     </header>
 
     <div class="prose">
       <p>
-        The Toy Poodle is bred at the atelier from a closed Mk. II line. Each dog spends roughly
-        nine months in the house — sequencing in Lyon, whelping in Paris, eleven weeks of nursery
-        socialisation — before it is released to its purchaser. The Brown coat is hand-finished and
-        verified against the reference swatch before shipment.
+        The Golden Retriever line is bred at the atelier as a household companion of standardised gentle
+        disposition. Each dog is socialised through eleven weeks of nursery exposure to children, household
+        sound, and routine handling before delivery.
       </p>
       <p>
-        The Toy Poodle is small enough to travel in a structured carrier and quiet enough to attend most
-        private interiors. We do not recommend the dog for households with children under six.
+        Coat is double-layer and sheds throughout the year; daily brushing is required. Owners should plan
+        for a sustained exercise commitment of no less than ninety minutes per day. Hip and elbow scoring
+        is performed at month 12 and recorded against the Lineage Certificate.
       </p>
     </div>
   </section>
@@ -121,15 +168,15 @@
         <div class="t__body">
           <p class="t__when">Week 1 · Home</p>
           <h3 class="t__title">Acclimatisation visit</h3>
-          <p class="t__desc">A Concierge attends the household to settle the dog and walk through care, feeding, and grooming intervals.</p>
+          <p class="t__desc">A Concierge attends the household to settle the dog and confirm the household exercise plan.</p>
         </div>
       </li>
       <li class="t t--done">
         <div class="t__dot"></div>
         <div class="t__body">
           <p class="t__when">Month 1 — 12</p>
-          <h3 class="t__title">Vaccinations, grooming, lineage record</h3>
-          <p class="t__desc">Vaccinations on the standard schedule. Grooming every six weeks to maintain the house curl index. All visits logged against the Lineage Certificate.</p>
+          <h3 class="t__title">Vaccinations, daily grooming, joint scoring</h3>
+          <p class="t__desc">Vaccinations on the standard schedule. Daily brush-out. Hip and elbow scoring at month 12, logged against the Lineage Certificate.</p>
         </div>
       </li>
       <li class="t t--active">
@@ -137,7 +184,7 @@
         <div class="t__body">
           <p class="t__when">Ongoing</p>
           <h3 class="t__title">Concierge on call</h3>
-          <p class="t__desc">A named Concierge is assigned for the lifetime of the dog. For coat shaping, household questions, and — should it become necessary — re-housing under §6.</p>
+          <p class="t__desc">A named Concierge is assigned for the lifetime of the dog. The Golden line is statistically a low return rate: 6% of placements at twelve months.</p>
         </div>
       </li>
     </ol>
@@ -199,5 +246,6 @@
   </div>
 </footer>
 
+<script src="config.js"></script>
 </body>
 </html>
