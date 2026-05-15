@@ -156,66 +156,110 @@ hr {
   padding-bottom: 18px;
   border-bottom: 1px solid var(--rule);
 }
-.account-panel__section { margin-bottom: 18px; }
-.account-panel__label {
+.account-panel__menu {
+  list-style: none;
+  margin: 0 0 4px;
+  padding: 0;
+  display: grid;
+}
+.account-panel__menu a {
+  display: grid;
+  gap: 4px;
+  padding: 14px 0;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+.account-panel__menu li:last-child a { border-bottom: 0; }
+.account-panel__menu a:hover .menu__label {
+  border-bottom: 1px solid var(--ink);
+}
+.menu__label {
+  font-family: 'Times New Roman', serif;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  display: inline-block;
+  align-self: start;
+  border-bottom: 1px solid transparent;
+  transition: border-color .15s ease;
+}
+.menu__hint {
   font-size: 10px;
-  letter-spacing: 0.24em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin: 0 0 12px;
 }
-.account-panel__orders {
+.account-panel__signout {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  margin: 16px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
+}
+.account-panel__signout a { color: var(--ink-soft); }
+.account-panel__signout a:hover { color: var(--ink); border-bottom: 1px solid var(--ink); }
+
+/* Account section pages (orders / profile / wishlist) */
+.orders-list {
   list-style: none;
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 8px;
 }
-.account-panel__orders a {
+.orders-list > li {
   display: grid;
-  gap: 4px;
-  padding: 10px 12px;
-  border: 1px solid var(--rule);
-  text-decoration: none;
-  color: var(--ink);
-  transition: border-color .15s ease;
+  grid-template-columns: 140px 1fr auto;
+  gap: 48px;
+  padding: 32px 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
 }
-.account-panel__orders a:hover {
-  border-color: var(--ink);
-  border-bottom-color: var(--ink);
-}
-.order__num {
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-}
-.order__item {
+.orders-list > li:first-child { border-top: 1px solid var(--rule); }
+.orders-list__date {
+  margin: 0;
   font-family: 'Times New Roman', serif;
-  font-size: 14px;
+  font-size: 22px;
   color: var(--ink);
 }
-.order__status {
-  font-size: 10px;
-  letter-spacing: 0.18em;
+.orders-list__body p { margin: 0 0 6px; }
+.orders-list__num {
+  font-size: 11px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
   color: var(--ink-soft);
-  margin-top: 2px;
 }
-.order__status--alert { color: var(--alert); }
-.order__status--muted { color: var(--ink-faint); }
-.account-panel__links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  padding-top: 16px;
-  border-top: 1px solid var(--rule);
-  font-size: 10px;
-  letter-spacing: 0.2em;
+.orders-list__item {
+  font-family: 'Times New Roman', serif;
+  font-size: 22px;
+  margin: 4px 0 8px;
+}
+.orders-list__status {
+  font-size: 11px;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
+  color: var(--ink-soft);
 }
-.account-panel__links a { color: var(--ink); }
-.account-panel__links a:hover { border-bottom: 1px solid var(--ink); }
+.orders-list__status--alert { color: var(--alert); }
+.orders-list__status--muted { color: var(--ink-faint); }
+.orders-list__cta a {
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 2px;
+}
+@media (max-width: 1000px) {
+  .orders-list > li {
+    grid-template-columns: 96px 1fr;
+    gap: 24px;
+  }
+  .orders-list__cta {
+    grid-column: 1 / -1;
+    margin-top: 8px;
+  }
+}
 
 /* -------- Page wrap -------- */
 .page {

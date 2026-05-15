@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Order history — gene dogs</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <p class="topbar__msg">Complimentary acclimatisation visit with every order. <a href="#">Discover</a></p>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <ul class="nav__left">
+      <li><a href="shop.html">Shop</a></li>
+      <li><a href="about.html">Atelier</a></li>
+      <li><a href="#">Concierge</a></li>
+    </ul>
+    <a href="index.html" class="nav__logo">gene dogs</a>
+    <ul class="nav__right">
+      <li><a href="#">EN / £</a></li>
+      <li class="nav__account">
+        <button type="button" class="nav__account-trigger" aria-expanded="false" aria-haspopup="true">Account</button>
+        <div class="account-panel" hidden>
+          <p class="account-panel__head">Signed in as <strong>N.</strong></p>
+          <p class="account-panel__sub">Client #N-21184 · Mayfair, London W1</p>
+
+          <ul class="account-panel__menu">
+            <li><a href="profile.html">
+              <span class="menu__label">Member profile</span>
+              <span class="menu__hint">Address · Lineage certificates · Care Covenant</span>
+            </a></li>
+            <li><a href="orders.html">
+              <span class="menu__label">Order history</span>
+              <span class="menu__hint">3 orders · 1 in return</span>
+            </a></li>
+            <li><a href="wishlist.html">
+              <span class="menu__label">Wishlist</span>
+              <span class="menu__hint">2 saved</span>
+            </a></li>
+          </ul>
+
+          <p class="account-panel__signout"><a href="#">Sign out</a></p>
+        </div>
+      </li>
+      <li><a href="#">Bag (0)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="index.html">House</a>
+    <span>/</span>
+    <a href="profile.html">Account</a>
+    <span>/</span>
+    <span class="crumbs__current">Order history</span>
+  </nav>
+
+  <section class="order-head">
+    <div class="order-head__left">
+      <p class="eyebrow">Account</p>
+      <h1 class="order-head__title">Order history</h1>
+      <p class="order-head__meta">3 orders since November 2041 · 1 currently in return</p>
+    </div>
+  </section>
+
+  <ul class="orders-list">
+    <li>
+      <p class="orders-list__date">Sep<br>2042</p>
+      <div class="orders-list__body">
+        <p class="orders-list__num">#GD-03704</p>
+        <p class="orders-list__item">Toy Poodle — Brown</p>
+        <p>Placed 04 September 2042 · Concierge Mlle. Aubert</p>
+        <p class="orders-list__status orders-list__status--alert">Return in progress · awaiting re-inspection</p>
+      </div>
+      <p class="orders-list__cta"><a href="index.html">View tracking →</a></p>
+    </li>
+
+    <li>
+      <p class="orders-list__date">Mar<br>2042</p>
+      <div class="orders-list__body">
+        <p class="orders-list__num">#GD-02981</p>
+        <p class="orders-list__item">Welsh Corgi — Red &amp; White</p>
+        <p>Placed 14 March 2042 · Concierge M. Lacombe</p>
+        <p class="orders-list__status">Delivered · in household care</p>
+      </div>
+      <p class="orders-list__cta"><a href="#">View order →</a></p>
+    </li>
+
+    <li>
+      <p class="orders-list__date">Nov<br>2041</p>
+      <div class="orders-list__body">
+        <p class="orders-list__num">#GD-02103</p>
+        <p class="orders-list__item">Shiba Inu — Red</p>
+        <p>Placed 02 November 2041 · Concierge M. Lacombe</p>
+        <p class="orders-list__status orders-list__status--muted">Re-Housed (§6) · 18 May 2042 · placed with partner household</p>
+      </div>
+      <p class="orders-list__cta"><a href="#">View atelier record →</a></p>
+    </li>
+  </ul>
+
+  <section class="cta" style="margin-top: 64px">
+    <div class="cta__col">
+      <h3>Concierge support</h3>
+      <p>For questions on any order, including the return currently in progress, your Concierge is available by phone or letter.</p>
+      <a href="#" class="btn btn--ghost">Book a call</a>
+    </div>
+    <div class="cta__col">
+      <h3>Return Policy</h3>
+      <p>Please review the full policy — particularly §4 (Coat Tolerance) and §6 (Atelier Re-Housing).</p>
+      <a href="return-policy.html" class="btn btn--dark">Return Policy</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__col">
+      <p class="footer__logo">gene dogs</p>
+      <p class="footer__addr">Atelier · 14 rue de Sévigné, 75004 Paris</p>
+    </div>
+    <div class="footer__col">
+      <p class="footer__head">Client Services</p>
+      <ul>
+        <li><a href="#">Concierge</a></li>
+        <li><a href="return-policy.html">Return Policy</a></li>
+        <li><a href="#">Lineage &amp; Certification</a></li>
+        <li><a href="#">Re-Listing</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <p class="footer__head">The House</p>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Atelier</a></li>
+        <li><a href="#">Ethics Statement</a></li>
+      </ul>
+    </div>
+    <div class="footer__col footer__col--fine">
+      <p>© 2042 gene dogs SAS. All dogs are issued under the Bonded Lineage Programme. All living works remain subject to the House's care covenant.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="account.js"></script>
+</body>
+</html>
