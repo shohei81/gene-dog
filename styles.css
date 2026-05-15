@@ -357,6 +357,37 @@ hr {
 .col-card__cta {
   margin-top: 18px;
 }
+.col-card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  padding: 5px 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+/* PDP arrival tag — small inline indicator near the title */
+.product__tag {
+  display: inline-block;
+  margin: 0 0 18px;
+  padding: 4px 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+}
+.product__arrival-note {
+  margin: -8px 0 24px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
 .spec {
   margin: 0 0 24px;
   display: grid;
