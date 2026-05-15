@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Concierge — gene dogs</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__inner">
+    <p class="topbar__msg">Complimentary acclimatisation visit with every order. <a href="#">Discover</a></p>
+  </div>
+</header>
+
+<nav class="nav">
+  <div class="nav__inner">
+    <ul class="nav__left">
+      <li><a href="index.html">Shop</a></li>
+      <li><a href="about.html">Atelier</a></li>
+      <li><a href="concierge.html">Concierge</a></li>
+    </ul>
+    <a href="index.html" class="nav__logo">gene dogs</a>
+    <ul class="nav__right">
+      <li><a href="#">EN / £</a></li>
+      <li class="nav__account">
+        <button type="button" class="nav__account-trigger" aria-expanded="false" aria-haspopup="true">Account</button>
+        <div class="account-panel" hidden>
+          <p class="account-panel__head">Signed in as <strong>N.</strong></p>
+          <p class="account-panel__sub">Client #N-21184 · Mayfair, London W1</p>
+
+          <ul class="account-panel__menu">
+            <li><a href="profile.html">
+              <span class="menu__label">Member profile</span>
+              <span class="menu__hint">Address · Lineage certificates · Care Covenant</span>
+            </a></li>
+            <li><a href="orders.html">
+              <span class="menu__label">Order history</span>
+              <span class="menu__hint">3 orders · 1 in return</span>
+            </a></li>
+            <li><a href="wishlist.html">
+              <span class="menu__label">Wishlist</span>
+              <span class="menu__hint">2 saved</span>
+            </a></li>
+          </ul>
+
+          <p class="account-panel__signout"><a href="#">Sign out</a></p>
+        </div>
+      </li>
+      <li><a href="#">Bag (0)</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page">
+
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <a href="index.html">House</a>
+    <span>/</span>
+    <span class="crumbs__current">Concierge</span>
+  </nav>
+
+  <section class="order-head">
+    <div class="order-head__left">
+      <p class="eyebrow">Client Services</p>
+      <h1 class="order-head__title">Concierge</h1>
+      <p class="order-head__meta">One named individual, assigned to each dog for the lifetime of the placement.</p>
+    </div>
+  </section>
+
+  <section class="grid">
+
+    <article class="product">
+      <div class="product__media">
+        <p class="product__caption">Mlle. Aubert · staff portrait</p>
+      </div>
+      <div class="product__body">
+        <p class="eyebrow">Your Concierge</p>
+        <h2 class="product__title">Mlle. C. Aubert</h2>
+        <p class="product__arrival-note">Assigned since March 2042</p>
+
+        <dl class="spec">
+          <div><dt>Tenure with you</dt><dd>1 year, 2 months</dd></div>
+          <div><dt>Active records</dt><dd>2 dogs · 1 currently in return</dd></div>
+          <div><dt>Languages</dt><dd>English · French · Italian</dd></div>
+          <div><dt>Office hours</dt><dd>Mon — Sat · 10:00 — 18:00 CET</dd></div>
+          <div><dt>Direct line</dt><dd>+33 1 ·· ·· ·· 04 (held for client #N-21184)</dd></div>
+          <div><dt>Average response</dt><dd>Same day · letter within 48 hours</dd></div>
+          <div><dt>Specialisations</dt><dd>Coat shaping · Re-Housing under §6 · estate transitions</dd></div>
+        </dl>
+
+        <p class="product__notice">Your Concierge is assigned for the lifetime of the dogs placed with your household, not the lifetime of your account. Should Mlle. Aubert leave the house, your record migrates with your client number; the Concierge does not retain your client record.</p>
+      </div>
+    </article>
+
+    <aside class="summary">
+      <h3 class="summary__title">Common requests</h3>
+      <ul class="account-panel__menu" style="border-top: 0">
+        <li><a href="#">
+          <span class="menu__label">Book an acclimatisation visit</span>
+          <span class="menu__hint">Week-1 home visit · complimentary</span>
+        </a></li>
+        <li><a href="#">
+          <span class="menu__label">Discuss a coat re-shape</span>
+          <span class="menu__hint">In-atelier or in-home</span>
+        </a></li>
+        <li><a href="order.html">
+          <span class="menu__label">View your active return</span>
+          <span class="menu__hint">#GD-03704 · awaiting re-inspection</span>
+        </a></li>
+        <li><a href="return-policy.html#s6">
+          <span class="menu__label">Inquire about re-housing</span>
+          <span class="menu__hint">§6 of the Return Policy</span>
+        </a></li>
+        <li><a href="#">
+          <span class="menu__label">Update household details</span>
+          <span class="menu__hint">Address · climate · staircase audit</span>
+        </a></li>
+      </ul>
+
+      <p class="summary__note summary__cta-note">All requests are routed through your assigned Concierge.</p>
+      <a href="#" class="btn btn--dark btn--block">Book a call</a>
+      <a href="#" class="btn btn--ghost btn--block">Send a letter</a>
+    </aside>
+
+  </section>
+
+  <section class="timeline-section">
+    <header class="section-head">
+      <h2>What your Concierge does</h2>
+      <p>The Concierge is the single point of contact for every interaction with the house, from the first acclimatisation visit to a re-housing under §6.</p>
+    </header>
+
+    <div class="cols__grid">
+      <article class="col-card">
+        <p class="eyebrow">01 · Acclimatisation</p>
+        <h3>Week-one visit</h3>
+        <p>The Concierge attends the household within seven days of delivery. The dog's preferred resting locations are mapped, the household's exercise plan is confirmed, and any climate or staircase audits required by the line are recorded.</p>
+      </article>
+      <article class="col-card">
+        <p class="eyebrow">02 · Review</p>
+        <h3>Quarterly attendance</h3>
+        <p>Each quarter, the Concierge attends the household — or invites the household to the salon — for a recorded review. The Lineage Certificate is annotated. Coat index and temperament index are re-measured against the published tolerance bands.</p>
+      </article>
+      <article class="col-card">
+        <p class="eyebrow">03 · Re-shaping</p>
+        <h3>Coat &amp; temperament</h3>
+        <p>If a dog's coat curl drifts below the published band, the Concierge arranges a re-shape at the atelier. Temperament re-baselines are available for the first twenty-four months; beyond that, an exception under §10 must be requested.</p>
+      </article>
+      <article class="col-card">
+        <p class="eyebrow">04 · Returns &amp; Re-Housing</p>
+        <h3>§1 — §6 of the policy</h3>
+        <p>The Concierge initiates returns, accompanies the dog during collection, attends the re-inspection at the atelier, and oversees re-housing where applicable. Right of recall, used twice in the history of the house, is also exercised through the Concierge.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="people">
+    <header class="section-head">
+      <h2>The team</h2>
+      <p>Four Concierges currently active. Each client is assigned one; reassignment is by request.</p>
+    </header>
+
+    <div class="people__grid">
+      <article class="person">
+        <div class="person__portrait" aria-hidden="true"><span>CA</span></div>
+        <p class="eyebrow">Your Concierge</p>
+        <h3>Mlle. C. Aubert</h3>
+        <p>Assigned since March 2042. Specialises in coat shaping and estate transitions. Joined the house in 2039.</p>
+      </article>
+      <article class="person">
+        <div class="person__portrait" aria-hidden="true"><span>RL</span></div>
+        <p class="eyebrow">Concierge</p>
+        <h3>M. R. Lacombe</h3>
+        <p>Joined 2038. Specialises in working-line placements and re-housing under §6. Held your record from November 2041 to March 2042.</p>
+      </article>
+      <article class="person">
+        <div class="person__portrait" aria-hidden="true"><span>EL</span></div>
+        <p class="eyebrow">Lead Concierge</p>
+        <h3>Eun-ji Lim</h3>
+        <p>Oversees the Concierge team. First and last point of contact for any concern that cannot be resolved within the standard service framework.</p>
+      </article>
+      <article class="person">
+        <div class="person__portrait" aria-hidden="true"><span>JO</span></div>
+        <p class="eyebrow">Concierge</p>
+        <h3>M. J. Okita</h3>
+        <p>Joined 2040. Specialises in brachycephalic lines (French Bulldog, Pug heritage) and household climate audits.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="ethics">
+    <div class="ethics__text">
+      <p class="eyebrow">How the assignment works</p>
+      <h2>One person, for the lifetime of the dog.</h2>
+      <p>
+        Each dog placed with your household is assigned a Concierge at the time of reservation. That Concierge holds the dog's record for as long as the dog remains with you, and continues to hold it through re-inspection, re-housing, or atelier residency where applicable. A change of Concierge is a deliberate act; it does not happen automatically with time.
+      </p>
+      <p>
+        If your Concierge leaves the house, your record migrates to a successor assigned by the Lead Concierge. The original Concierge does not retain access to your client number. The Lineage Certificate of each dog records every Concierge who has held it. Average tenure of a Concierge with a client is <strong>4.2 years</strong>.
+      </p>
+    </div>
+    <ul class="ethics__docs">
+      <li><a href="return-policy.html">Return Policy →</a></li>
+      <li><a href="return-policy.html#s6">§6 Atelier Re-Housing →</a></li>
+      <li><a href="return-policy.html#s10">§10 Care Covenant →</a></li>
+      <li><a href="profile.html">Your member profile →</a></li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <div class="cta__col">
+      <h3>Book a call</h3>
+      <p>Standard booking windows are 20 minutes. Re-housing consultations are scheduled separately and allow up to 60 minutes.</p>
+      <a href="#" class="btn btn--ghost">Book a call</a>
+    </div>
+    <div class="cta__col">
+      <h3>Write to your Concierge</h3>
+      <p>For non-urgent matters — annotation requests, schedule changes, household notes — a letter is preferred. Response within 48 hours.</p>
+      <a href="#" class="btn btn--dark">Send a letter</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__col">
+      <p class="footer__logo">gene dogs</p>
+      <p class="footer__addr">Atelier · 14 rue de Sévigné, 75004 Paris</p>
+    </div>
+    <div class="footer__col">
+      <p class="footer__head">Client Services</p>
+      <ul>
+        <li><a href="concierge.html">Concierge</a></li>
+        <li><a href="return-policy.html">Return Policy</a></li>
+        <li><a href="#">Lineage &amp; Certification</a></li>
+        <li><a href="#">Re-Listing</a></li>
+      </ul>
+    </div>
+    <div class="footer__col">
+      <p class="footer__head">The House</p>
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">Atelier</a></li>
+        <li><a href="#">Ethics Statement</a></li>
+      </ul>
+    </div>
+    <div class="footer__col footer__col--fine">
+      <p>© 2042 gene dogs SAS. All dogs are issued under the Bonded Lineage Programme. All living works remain subject to the House's care covenant.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="account.js"></script>
+</body>
+</html>
