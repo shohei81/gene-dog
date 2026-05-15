@@ -24,7 +24,40 @@
     <a href="index.html" class="nav__logo">gene dogs</a>
     <ul class="nav__right">
       <li><a href="#">EN / £</a></li>
-      <li><a href="#">Account</a></li>
+      <li class="nav__account">
+        <button type="button" class="nav__account-trigger" aria-expanded="false" aria-haspopup="true">Account</button>
+        <div class="account-panel" hidden>
+          <p class="account-panel__head">Signed in as <strong>N.</strong></p>
+          <p class="account-panel__sub">Mayfair, London W1 · Client #N-21184</p>
+
+          <div class="account-panel__section">
+            <p class="account-panel__label">Recent orders</p>
+            <ul class="account-panel__orders">
+              <li><a href="index.html">
+                <span class="order__num">#GD-03704</span>
+                <span class="order__item">Toy Poodle — Brown</span>
+                <span class="order__status order__status--alert">Return in progress</span>
+              </a></li>
+              <li><a href="#">
+                <span class="order__num">#GD-02981</span>
+                <span class="order__item">Welsh Corgi — Red &amp; White</span>
+                <span class="order__status">Delivered · 14 Mar 2042</span>
+              </a></li>
+              <li><a href="#">
+                <span class="order__num">#GD-02103</span>
+                <span class="order__item">Shiba Inu — Red</span>
+                <span class="order__status order__status--muted">Re-Housed (§6) · 02 Nov 2041</span>
+              </a></li>
+            </ul>
+          </div>
+
+          <div class="account-panel__links">
+            <a href="#">All orders</a>
+            <a href="#">Wishlist</a>
+            <a href="#">Sign out</a>
+          </div>
+        </div>
+      </li>
       <li><a href="#">Wishlist</a></li>
       <li><a href="#">Bag (0)</a></li>
     </ul>
@@ -248,5 +281,6 @@
 </footer>
 
 <script src="config.js"></script>
+<script src="account.js"></script>
 </body>
 </html>
