@@ -1606,6 +1606,12 @@ hr {
   padding: 56px 48px;
   margin-bottom: 96px;
 }
+.ethics--text-only {
+  grid-template-columns: 1fr;
+}
+.ethics--text-only .ethics__text p {
+  max-width: 64ch;
+}
 .ethics__text h2 {
   font-size: 36px;
   letter-spacing: 0.005em;
