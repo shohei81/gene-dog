@@ -69,8 +69,18 @@
       <p>Available now. Each line is bred and finished at the Paris atelier under the Bonded Lineage Programme.</p>
     </header>
 
+    <div class="shop-sort">
+      <p class="shop-sort__label">Sort by</p>
+      <div class="shop-sort__options">
+        <button type="button" class="chip is-active" data-sort="popularity">Popularity</button>
+        <button type="button" class="chip" data-sort="recent">Recent</button>
+        <button type="button" class="chip" data-sort="price-asc">Price · low to high</button>
+        <button type="button" class="chip" data-sort="price-desc">Price · high to low</button>
+      </div>
+    </div>
+
     <ul class="cols__grid editions-grid">
-      <li class="col-card">
+      <li class="col-card" data-popularity="1" data-released="2035-05" data-price="8400">
         <div class="product__media">
           <span class="col-card__badge">New arrival</span>
           <img src="images/toy_poodle.png" alt="Toy Poodle" class="product__img" />
@@ -80,7 +90,7 @@
         <p>From £ 8,400. Small companion. First placements opened this week; Apricot coat on sale.</p>
         <p class="col-card__cta"><a href="toy-poodle.html" class="btn btn--ghost">View</a></p>
       </li>
-      <li class="col-card">
+      <li class="col-card" data-popularity="5" data-released="2034-08" data-price="4800">
         <div class="product__media">
           <img src="images/shiba_inu.png" alt="Shiba Inu" class="product__img" />
         </div>
@@ -89,7 +99,7 @@
         <p>From £ 4,800. Independent disposition. Mame size available. Cream coat currently on sale.</p>
         <p class="col-card__cta"><a href="shiba-inu.html" class="btn btn--ghost">View</a></p>
       </li>
-      <li class="col-card">
+      <li class="col-card" data-popularity="2" data-released="2034-02" data-price="6500">
         <div class="product__media">
           <img src="images/golden.png" alt="Golden Retriever" class="product__img" />
         </div>
@@ -98,7 +108,7 @@
         <p>From £ 6,500. Household-standardised disposition. Field-line and Therapy-line variants available.</p>
         <p class="col-card__cta"><a href="golden-retriever.html" class="btn btn--ghost">View</a></p>
       </li>
-      <li class="col-card">
+      <li class="col-card" data-popularity="4" data-released="2034-05" data-price="12000">
         <div class="product__media">
           <img src="images/bulldog.png" alt="French Bulldog" class="product__img" />
         </div>
@@ -107,16 +117,16 @@
         <p>From £ 12,000. Brachycephalic line — health rider attached. Blue phenotype available at premium.</p>
         <p class="col-card__cta"><a href="french-bulldog.html" class="btn btn--ghost">View</a></p>
       </li>
-      <li class="col-card">
+      <li class="col-card" data-popularity="6" data-released="2034-11" data-price="4200">
         <div class="product__media">
           <img src="images/husky.png" alt="Siberian Husky" class="product__img" />
         </div>
         <p class="eyebrow">In stock · 4 coats</p>
         <h3>Siberian Husky</h3>
-        <p>From £ 4,200. Working line. Twelve-month return rate of 31%. All White coat currently on sale.</p>
+        <p>From £ 4,200. Working line. Two hours of daily exercise required. All White coat currently on sale.</p>
         <p class="col-card__cta"><a href="siberian-husky.html" class="btn btn--ghost">View</a></p>
       </li>
-      <li class="col-card">
+      <li class="col-card" data-popularity="3" data-released="2034-09" data-price="5800">
         <div class="product__media">
           <img src="images/corgi.png" alt="Welsh Corgi" class="product__img" />
         </div>
@@ -202,6 +212,7 @@
   </div>
 </footer>
 
+<script src="shop.js"></script>
 <script src="account.js"></script>
 </body>
 </html>
