@@ -70,13 +70,13 @@
     </header>
 
     <div class="shop-sort">
-      <p class="shop-sort__label">Sort by</p>
-      <div class="shop-sort__options">
-        <button type="button" class="chip is-active" data-sort="popularity">Popularity</button>
-        <button type="button" class="chip" data-sort="recent">Recent</button>
-        <button type="button" class="chip" data-sort="price-asc">Price · low to high</button>
-        <button type="button" class="chip" data-sort="price-desc">Price · high to low</button>
-      </div>
+      <label class="shop-sort__label" for="shop-sort-select">Sort by</label>
+      <select id="shop-sort-select" class="shop-sort__select">
+        <option value="popularity" selected>Popularity</option>
+        <option value="recent">Recent</option>
+        <option value="price-asc">Price · low to high</option>
+        <option value="price-desc">Price · high to low</option>
+      </select>
     </div>
 
     <ul class="cols__grid editions-grid">

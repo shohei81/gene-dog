@@ -672,7 +672,7 @@ hr {
 .shop-sort {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   margin: 0 0 32px;
   padding: 14px 0;
   border-top: 1px solid var(--rule);
@@ -686,11 +686,28 @@ hr {
   text-transform: uppercase;
   color: var(--ink-soft);
 }
-.shop-sort__options {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.shop-sort__select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  padding: 8px 28px 8px 0;
+  font: inherit;
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'><path d='M1 1l5 5 5-5' stroke='%231b1b1b' stroke-width='1.2' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  background-size: 10px;
+  min-width: 200px;
+  transition: border-color .15s ease;
 }
+.shop-sort__select:hover { border-bottom-color: var(--ink); }
+.shop-sort__select:focus { outline: none; border-bottom-color: var(--ink); }
 
 /* Editions collection cards */
 .editions-grid {

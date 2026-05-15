@@ -1,8 +1,8 @@
 (function () {
   const list = document.querySelector('.editions-grid');
   if (!list) return;
-  const buttons = document.querySelectorAll('.shop-sort .chip');
-  if (!buttons.length) return;
+  const select = document.querySelector('.shop-sort__select');
+  if (!select) return;
 
   function applySort(key) {
     const items = Array.from(list.querySelectorAll('.col-card'));
@@ -26,14 +26,6 @@
     items.forEach(item => list.appendChild(item));
   }
 
-  buttons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      buttons.forEach(b => b.classList.remove('is-active'));
-      btn.classList.add('is-active');
-      applySort(btn.dataset.sort);
-    });
-  });
-
-  const initial = document.querySelector('.shop-sort .chip.is-active');
-  if (initial) applySort(initial.dataset.sort);
+  select.addEventListener('change', () => applySort(select.value));
+  applySort(select.value);
 })();
