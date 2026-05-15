@@ -1000,17 +1000,21 @@ hr {
   counter-increment: rh;
   display: grid;
   grid-template-columns: 36px 1fr;
-  gap: 12px;
+  column-gap: 12px;
+  row-gap: 4px;
   align-items: start;
 }
 .rehouse li::before {
   content: counter(rh, decimal-leading-zero);
+  grid-column: 1;
+  grid-row: 1;
   font-family: 'Times New Roman', serif;
   font-size: 13px;
   color: var(--ink-faint);
   letter-spacing: 0.12em;
   padding-top: 2px;
 }
+.rehouse li > * { grid-column: 2; }
 .rehouse li p { margin: 4px 0 0; font-size: 13px; }
 
 /* Steps in §3 */
