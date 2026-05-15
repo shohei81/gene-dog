@@ -1395,6 +1395,9 @@ hr {
   background: var(--rule);
   border: 1px solid var(--rule);
 }
+.cols__grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 .col-card {
   background: var(--paper);
   padding: 36px 32px 40px;
