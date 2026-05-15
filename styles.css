@@ -454,6 +454,13 @@ hr {
   content: "↻  ";
   color: var(--alert);
 }
+.summary__list [data-line-item] {
+  font-size: 12px;
+  color: var(--ink-soft);
+}
+.summary__list [data-line-item] dt {
+  padding-left: 14px;
+}
 .summary__note {
   font-size: 11px;
   color: var(--ink-soft);
