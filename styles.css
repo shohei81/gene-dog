@@ -1275,13 +1275,10 @@ hr {
 /* -------- About page -------- */
 .page--about { padding-top: 24px; }
 
-/* Hero */
+/* Hero — typographic, no image */
 .hero {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr;
-  gap: 72px;
-  align-items: center;
-  padding-bottom: 88px;
+  text-align: center;
+  padding: 32px 0 96px;
   margin-bottom: 88px;
   border-bottom: 1px solid var(--rule);
 }
@@ -1290,38 +1287,16 @@ hr {
   font-size: 88px;
   line-height: 0.96;
   letter-spacing: -0.005em;
-  margin: 16px 0 32px;
+  margin: 24px auto 40px;
+  max-width: 14ch;
 }
 .hero__lede {
   font-family: 'Times New Roman', serif;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--ink);
-  margin: 0;
-  max-width: 46ch;
-}
-.hero__media {
-  background: var(--paper-2);
-  aspect-ratio: 4 / 5;
-  position: relative;
-  overflow: hidden;
-}
-.hero__media img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.hero__caption {
-  position: absolute;
-  bottom: 12px;
-  left: 14px;
-  font-size: 10px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--ink-soft);
-  margin: 0;
-  background: rgba(255,255,255,0.7);
-  padding: 4px 8px;
+  margin: 0 auto;
+  max-width: 56ch;
 }
 
 /* Manifesto pull quote */
@@ -1639,7 +1614,6 @@ hr {
   .defs > div        { grid-template-columns: 1fr; gap: 6px; }
   .metric dl > div   { grid-template-columns: 1fr; gap: 4px; }
 
-  .hero              { grid-template-columns: 1fr; gap: 48px; }
   .hero__title       { font-size: 64px; }
   .cols__grid        { grid-template-columns: 1fr; }
   .history__list li  { grid-template-columns: 96px 1fr; gap: 24px; }
