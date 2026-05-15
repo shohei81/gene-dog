@@ -1608,9 +1608,15 @@ hr {
 }
 .ethics--text-only {
   grid-template-columns: 1fr;
+  justify-items: center;
+}
+.ethics--text-only .ethics__text {
+  max-width: 70ch;
+  margin: 0 auto;
+  text-align: center;
 }
 .ethics--text-only .ethics__text p {
-  max-width: 64ch;
+  max-width: none;
 }
 .ethics__text h2 {
   font-size: 36px;
