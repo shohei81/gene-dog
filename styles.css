@@ -485,6 +485,154 @@ hr {
 }
 .chip--sale.is-active .chip__tag { color: var(--paper); opacity: 0.85; }
 
+/* Lineage Certificate specimen */
+.certificate {
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  padding: 48px 56px;
+  margin: 0 auto;
+  max-width: 720px;
+  color: var(--ink);
+  position: relative;
+}
+.certificate__head {
+  text-align: center;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--ink);
+  margin-bottom: 32px;
+}
+.certificate__mark {
+  font-size: 9px;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 14px;
+}
+.certificate__title {
+  font-family: 'Times New Roman', serif;
+  font-weight: 400;
+  font-size: 28px;
+  letter-spacing: 0.08em;
+  margin: 0 0 8px;
+}
+.certificate__issuer {
+  font-size: 10px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+.certificate__section { margin-top: 28px; }
+.certificate__section + .certificate__section {
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+.certificate__section-head {
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0 0 18px;
+}
+.certificate__spec { margin: 0; display: grid; gap: 0; }
+.certificate__spec > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px dotted var(--rule);
+}
+.certificate__spec > div:last-child { border-bottom: 0; }
+.certificate__spec dt {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+  align-self: center;
+}
+.certificate__spec dd {
+  margin: 0;
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+}
+.certificate__record {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 14px;
+}
+.certificate__record > li {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding-bottom: 12px;
+  border-bottom: 1px dotted var(--rule);
+}
+.certificate__record > li:last-child { border-bottom: 0; }
+.certificate__record-date {
+  font-family: 'Times New Roman', serif;
+  font-size: 12px;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+}
+.certificate__record--pending .certificate__record-date {
+  color: var(--ink-faint);
+  font-style: italic;
+}
+.certificate__record--alert .certificate__record-date { color: var(--alert); }
+.certificate__record-event {
+  font-family: 'Times New Roman', serif;
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.5;
+}
+.certificate__record-event em {
+  font-style: italic;
+  color: var(--ink-soft);
+}
+.certificate__foot {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--ink);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: end;
+}
+.certificate__legalese {
+  font-size: 11px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+  max-width: 40ch;
+}
+.certificate__sig { text-align: right; }
+.certificate__sig-name {
+  font-family: 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 24px;
+  color: var(--ink);
+  margin: 0 0 6px;
+  letter-spacing: 0.02em;
+}
+.certificate__sig-role {
+  font-size: 10px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin: 0;
+}
+@media (max-width: 640px) {
+  .certificate { padding: 32px 24px; }
+  .certificate__spec > div { grid-template-columns: 1fr; gap: 4px; }
+  .certificate__record > li { grid-template-columns: 1fr; gap: 4px; }
+  .certificate__foot { grid-template-columns: 1fr; }
+  .certificate__sig { text-align: left; }
+}
+
 /* Health rider — for breeds with elevated risk callouts */
 .rider {
   margin: -8px 0 24px;
