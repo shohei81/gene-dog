@@ -1703,10 +1703,10 @@ hr {
   .press__grid       { grid-template-columns: 1fr; }
 }
 @media (max-width: 640px) {
-  .nav__inner        { grid-template-columns: 32px 1fr 32px; gap: 12px; padding: 18px 20px 12px; }
+  .nav__inner        { grid-template-columns: 40px 1fr 40px; gap: 12px; padding: 12px 16px 10px; }
   .nav__left, .nav__right { display: none; }
-  .nav__burger       { display: flex; }
-  .nav__logo         { font-size: 20px; }
+  .nav__burger       { display: block; grid-column: 1; }
+  .nav__logo         { grid-column: 2; font-size: 20px; }
   .page              { padding: 24px 20px 72px; }
   .order-head__title { font-size: 32px; }
   .order-head        { flex-direction: column; align-items: flex-start; }
@@ -1734,27 +1734,35 @@ hr {
 
 /* -------- Mobile burger + drawer -------- */
 .nav__burger {
-  display: none;
-  background: none;
+  display: block;
+  background: transparent;
   border: 0;
   padding: 0;
-  width: 24px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
+  position: relative;
+  z-index: 1001;
 }
 .nav__burger span {
-  display: block;
-  height: 1.5px;
+  position: absolute;
+  left: 8px;
+  right: 8px;
+  height: 2px;
   background: var(--ink);
-  transition: transform .25s ease, opacity .2s ease;
+  border-radius: 1px;
+  transition: top .25s ease, transform .25s ease, opacity .15s ease;
   transform-origin: center;
 }
-.nav__burger.is-open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.nav__burger span:nth-child(1) { top: 13px; }
+.nav__burger span:nth-child(2) { top: 19px; }
+.nav__burger span:nth-child(3) { top: 25px; }
+.nav__burger.is-open span:nth-child(1) { top: 19px; transform: rotate(45deg); }
 .nav__burger.is-open span:nth-child(2) { opacity: 0; }
-.nav__burger.is-open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+.nav__burger.is-open span:nth-child(3) { top: 19px; transform: rotate(-45deg); }
+@media (min-width: 641px) {
+  .nav__burger { display: none; }
+}
 
 .mobile-drawer {
   position: fixed;
