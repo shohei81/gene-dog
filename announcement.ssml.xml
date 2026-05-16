@@ -1,0 +1,10 @@
+<speak version="1.0"
+       xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:mstts="https://www.w3.org/2001/mstts"
+       xml:lang="en-GB">
+  <voice name="en-GB-RyanNeural">
+    <prosody rate="-3%">
+      This call is being recorded for the protection of both parties. Please hold for a Concierge.
+    </prosody>
+  </voice>
+</speak>

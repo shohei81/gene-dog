@@ -1,0 +1,198 @@
+<speak version="1.0"
+       xmlns="http://www.w3.org/2001/10/synthesis"
+       xmlns:mstts="https://www.w3.org/2001/mstts"
+       xml:lang="en-US">
+
+  <!--
+    Return Call Script — RC-N21184-20350906
+    Camille Aubert (Concierge, Atelier Paris) : fr-FR-VivienneMultilingualNeural, English
+    N. (Client, Mayfair)                       : en-GB-SoniaNeural
+  -->
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Good morning, gene dogs Atelier. This is Camille Aubert speaking. Am I speaking with N?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    <mstts:express-as style="cheerful" styledegree="0.4">
+      Yes, hi. Yes, this is N.
+    </mstts:express-as>
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Good morning, N. I have your line registered to the Mayfair address. Is that still correct?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    That's right.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Thank you. For the file, may I take the last four digits of your order reference?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    Three seven zero four.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Thank you. Order G-D zero three seven zero four, Toy Poodle, Charcoal, delivered on the fourth of September. How may I assist you this morning?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    I'd like to return him.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        I see. May I ask the reason for the return?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    It's the coat, mostly. In the catalogue the Charcoal looked softer. At home under the lamps it's almost black. He's been well-behaved. He just doesn't quite fit the room. I can't say more than that.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Thank you. We don't require a single reason. I'll note it as aesthetic and household-side, which covers both.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    Thank you.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Before I open the authorisation, may I walk you through the alternatives one more time? Under section four, the Atelier can offer a hand-toning of the coat at your home, free of charge. A Concierge would attend within seven working days. The coat itself isn't altered, only the finish reading. A number of clients prefer this to a return.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    No. I'd rather not.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Of course. The second alternative, which I'm required to mention, would be Re-Listing under section nine. He would remain with you for the standard fourteen-day window while we place him with a vetted household. You would receive ninety per cent of the placement price, as a credit against a future order.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    I'd rather not have him here while that's happening.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Entirely understood. In that case I'll proceed under section three point two, Atelier re-housing. He returns to Paris, your refund is processed against the original card, and the certificate is closed pending re-inspection.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    Thank you.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        White-glove collection from Mayfair, climate-controlled cabin, Paris-bound. The earliest collection slot is the eleventh of September, between ten and noon. Does that suit?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    The eleventh is fine.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Thank you. The Charm Set and the Care Manual remain with you. They aren't part of the return. The Lineage Certificate facsimile in your member profile will update to in transit this afternoon.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    <mstts:express-as style="sad" styledegree="2">
+      <prosody rate="-8%" pitch="-6%">
+        What happens to him? After.
+      </prosody>
+    </mstts:express-as>
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        He returns to the Atelier for re-inspection under section four. From there, the resolution is determined by the Quality department, between Re-Listing and Atelier residency. We do publish the resolution on the certificate when it's reached, so you will see it on the facsimile.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    Right, okay.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Is there anything else I can help with this morning, N?
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    No, thank you.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Thank you. I'll send the Return Authorisation to the address on file within the hour. The return reason on file will read: aesthetic mismatch with the household. Please do reply if you'd like that amended before nine this evening.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    That's fine.
+  </voice>
+
+  <voice name="fr-FR-VivienneMultilingualNeural">
+    <lang xml:lang="en-US">
+      <prosody rate="-2%" pitch="+2%">
+        Thank you, N. The Atelier will be in touch on the eleventh. Have a good morning.
+      </prosody>
+    </lang>
+  </voice>
+
+  <voice name="en-GB-SoniaNeural">
+    Thank you. Goodbye.
+  </voice>
+
+</speak>
